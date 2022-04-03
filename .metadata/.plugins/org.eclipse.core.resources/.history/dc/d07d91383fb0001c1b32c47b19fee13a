@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class UnitTwoDM {
+
+	public static void main(String[] args) {
+		
+	  Scanner decision = new Scanner(System.in);	
+
+	  System.out.println("Enter a number between 1 and 100");
+	  	int num = decision.nextInt();
+	  	
+	  if(num % 2 == 0 && num <25) {
+		  System.out.println(num + " even and less than 25");
+		  
+	  }else	if(num % 2 != 0) {
+		  System.out.println(num + " is odd");
+		  
+	   }else if(num % 2 == 0 && num >25 || num <59) {
+		  System.out.println(num + "is even");
+		  
+	   }else if(num % 2 == 0 && num >60) {
+		  System.out.println(num + " is even");
+		  
+	   }else if(num % 2 != 0 && num < 60) {
+		  System.out.println( num + "Odd and over 60.");
+	  }
+	  
+	}
+
+}
